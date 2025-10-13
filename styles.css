@@ -5,8 +5,9 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000000;
+  color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,20 +15,35 @@ body {
 }
 
 .container {
+  background-color: #121212;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 0, 100, 0.2);
   text-align: center;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 30px rgba(255, 0, 100, 0.4);
 }
 
 .snoopy {
-  width: 200px;
+  width: 220px;
   height: auto;
   margin-bottom: 20px;
+  border-radius: 10px;
+  border: 2px solid #ff0066;
+  transition: transform 0.4s ease;
+}
+
+.snoopy:hover {
+  transform: scale(1.05);
 }
 
 h1 {
-  color: #e60000;
-  font-size: 24px;
+  font-size: 28px;
+  color: #ff0066;
+  text-shadow: 0 0 5px #ff0066aa;
+  margin-top: 10px;
 }
