@@ -29,7 +29,7 @@ canvas {
   text-align: center;
 }
 
-.snoopy {
+.XXX {
   width: 220px;
   height: auto;
   margin-bottom: 20px;
@@ -38,7 +38,7 @@ canvas {
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.snoopy:hover {
+.XXX:hover {
   transform: scale(1.08) rotate(-2deg);
   box-shadow: 0 0 15px #00ff00, 0 0 25px #00ff00aa inset;
 }
@@ -77,6 +77,7 @@ h1::after {
   90% { clip: rect(25px, 900px, 30px, 0); }
   100% { clip: rect(0, 900px, 0, 0); }
 }
+
 
 
 
