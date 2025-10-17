@@ -15,7 +15,7 @@
       overflow: hidden;
     }
 
-    /* Efeito de "código caindo" no fundo */
+   
     body::before {
       content: "";
       position: absolute;
@@ -74,7 +74,7 @@
       to { opacity: 0.7; }
     }
 
-    /* Mobile */
+  
     @media (max-width: 600px) {
       body {
         flex-direction: column;
@@ -97,11 +97,12 @@
 </head>
 <body>
   <div class="container">
-    <img src="ss.jpg" alt="Snoopy Hacker" class="snoopy">
+    <img src="XXX.jpg" alt="Snoopy Hacker" class="snoopy">
     <h1>💻 HK7 | Access Granted</h1>
   </div>
 </body>
 </html>
+
 
 
 
