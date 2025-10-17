@@ -29,9 +29,10 @@ body {
 }
 
 .snoopy {
+  display: block;
+  margin: 0 auto 20px auto; /* sempre centralizada */
   width: 220px;
   height: auto;
-  margin-bottom: 20px;
   border-radius: 10px;
   border: 2px solid #ff0066;
   transition: transform 0.4s ease;
@@ -47,4 +48,25 @@ h1 {
   text-shadow: 0 0 5px #ff0066aa;
   margin-top: 10px;
 }
+
+/* --- Ajustes para celular --- */
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;       /* coloca em coluna */
+    justify-content: flex-start;  /* começa do topo */
+    padding: 20px;
+    height: auto;                 /* deixa a altura crescer */
+  }
+
+  .container {
+    width: 100%;
+    max-width: 350px;             /* limite para não estourar */
+    margin: 20px auto;
+  }
+
+  .snoopy {
+    max-width: 90%;               /* imagem se adapta à tela */
+  }
+}
+
 
