@@ -6,14 +6,27 @@
 
 body {
   font-family: 'Courier New', Courier, monospace;
-  background-color: #0a0a0a; /* preto profundo estilo terminal */
-  color: #00ff00; /* verde neon hacker */
+  background-color: #0a0a0a;
+  color: #00ff00;
+  overflow: hidden;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  overflow: hidden;
+  position: relative;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
 }
 
 .snoopy {
@@ -38,7 +51,7 @@ h1 {
   position: relative;
 }
 
-/* efeito de "glitch" opcional para h1 */
+/* efeito de glitch opcional */
 h1::after {
   content: attr(data-text);
   position: absolute;
