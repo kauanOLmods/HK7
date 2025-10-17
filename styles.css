@@ -30,7 +30,7 @@ body {
 
 .snoopy {
   display: block;
-  margin: 0 auto 20px auto; /* sempre centralizada */
+  margin: 0 auto 20px auto; 
   width: 220px;
   height: auto;
   border-radius: 10px;
@@ -49,24 +49,25 @@ h1 {
   margin-top: 10px;
 }
 
-/* --- Ajustes para celular --- */
+
 @media (max-width: 600px) {
   body {
-    flex-direction: column;       /* coloca em coluna */
-    justify-content: flex-start;  /* começa do topo */
+    flex-direction: column;       
+    justify-content: flex-start;  
     padding: 20px;
-    height: auto;                 /* deixa a altura crescer */
+    height: auto;                 
   }
 
   .container {
     width: 100%;
-    max-width: 350px;             /* limite para não estourar */
+    max-width: 350px;             
     margin: 20px auto;
   }
 
   .snoopy {
-    max-width: 90%;               /* imagem se adapta à tela */
+    max-width: 90%;               
   }
 }
+
 
 
